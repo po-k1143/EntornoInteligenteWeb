@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('proyecto','ProyectoController@index');//este se debe borrar
+Route::resource('horarios','HorarioController@index');
